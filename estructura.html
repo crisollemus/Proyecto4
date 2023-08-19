@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura CSS</title>
+    <link rel="shortcut icon" href="img/efpem_ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/inicio.css">
+ 
+</head>
+
+<body class="contenedor">
+    <section >
+        <aside >
+            <img src="img/Usac_logo.png" class="logo_usac" >  
+        
+            <img src="img/EFPEM.png" class="logo_Efpem" > 
+            </aside>
+        <p class="centrar_texto" id="sombra_texto"> 
+            Universidad de San Carlos de Guatemala – USAC
+            <br>
+            Escuela de Formación de Profesores de Enseñanza Media – EFPEM
+            <br>
+            Diseño Web – 2023
+            </p>
+        
+           
+        </section>
+        <nav>
+            <ul class="menu">
+                <li class="menu_li"><a class="active" href="index.html">Inicio</a></li>
+                <li class="menu_li"><a href="estructura.html">Estructura Css</a></li>
+                <li class="menu_li"><a href="colores.html">Página Colores</a></li>
+                <li class="menu_li"><a href="bordes.html">Página Bordes</a></li>
+                <li class="menu_li"><a href="sombreada.html">Página Sombreada</a></li>
+                <li class="menu_li"><a href="fondos.html">Página Fondos y Opacidad</a></li>
+            </ul>
+        </nav>
+    <header>
+        <br>
+        Estructura CSS
+    </header>
+
+    <div class="contenedor">
+
+        <h1>¿Qué es un selector CSS?</h1>
+        <p >
+            Los selectores CSS son herramientas utilizadas para definir el estilo que quieres dar a tus elementos en
+            CSS. Existen muchos tipos de selectores en este lenguaje, cada uno con su propia sintaxis y utilidad. El uso
+            de las reglas de programación correctas ayuda al explorador a aplicar propiedades específicas a los
+            elementos indicados. <br>
+            <br>
+            Los elementos a los que dirige un selector CSS son comúnmente referidos como «sujetos del selector». Estos
+            sujetos pueden seleccionarse con base en el tipo de elemento al que pertenecen, su clase, su nombre de
+            identificación por algún atributo o pseudo-estado.
+        </p>
+
+        <h2>Tipos de Selectores:</h2>
+        <p >
+            A lo largo de esta sección revisaremos seis de los principales tipos de selectores CSS y te daremos algunos
+            ejemplos de selectores para cada uno. Veremos:
+        <ul>
+            <li> Selector universal</li>
+            <li> Selector de tipo</li>
+            <li> Selector de clase</li>
+            <li> Selector de ID </li>
+            <li> Selector de atributo</li>
+            <li> Selector de pseudo-clase</li>
+        </ul>
+        </p>
+
+        <h1>¿Qué es una Propiedad en CSS?</h1>
+        <p >
+            Puede definir propiedades de reglas CSS, como la fuente del texto, la imagen y el color de fondo, las
+            propiedades de espaciado y diseño y el aspecto de los elementos de las listas. En primer lugar, cree una
+            nueva regla y, a continuación, establezca cualquiera de las propiedades siguientes. <br> </p> 
+        <H3>Fuente (Font – Family)</H3> 
+     <p>   Establece la familia de fuentes (o serie de familias) del estilo. Los navegadores muestran el texto utilizando
+        la primera fuente de la serie que esté instalada en el sistema del usuario. <br> </p>
+        <h3>Tamaño (Font – Size)</h3> 
+      <p> Define el tamaño del texto. Puede elegir un tamaño específico seleccionando el número y la unidad de medida, o
+        bien un tamaño relativo. </p> 
+        <h3>Estilo (Font – Style)</h3> 
+    <p>    Especifica Normal, Cursiva u Oblicuo como estilo de la fuente. El valor predeterminado es Normal. <br>
+   
+      </p>
+        
+
+        <h1>Valores y Unidades CSS</h1>
+        <p >Los valores que se pueden asignar a los atributos de estilo se pueden ver en una tabla en el siguiente capítulo. Muchos estos valores son unidades de medida (Unidades CSS), por ejemplo, el valor del tamaño de un margen o el tamaño de la fuente.
+
+            Las unidades de medida CSS se pueden clasificar en dos grupos, las relativas y las absolutas. Más la posibilidad de expresar valores en porcentaje.</p>
+        <br>
+            <h3>Unidades Relativas</h3>
+  <p>        Se llaman así porque son unidades relativas al medio o soporte sobre el que se está viendo la página web, que dependiendo de cada usuario puede ser distinto, puesto que existen muchos dispositivos que pueden acceder a la web, como ordenadores o teléfonos móviles.
+</p>  
+<p>En principio las unidades relativas son más aconsejables, porque se ajustarán mejor al medio con el que el usuario está accediendo a nuestra web. Son las siguientes: <br>
+<br></p> 
+<img src="img/unidadesr.png" width="430px" height="290px" >
+
+<h3>Unidades Absolutas</h3>
+<p >
+    Las unidades absolutas son medidas fijas, que deberían verse igual en todos los dispositivos. Como los centímetros, que son una convención de medida internacional. <br> </p>
+    <img src="img/unidades-absolutas.png" class="tamaño-ejemplos">
+
+
+<h3>Unidades CSS basadas en porcentaje</h3>
+<p class="text-justify">
+    El porcentaje se utiliza para definir una unidad en función de la que esté definida en un momento dado. Imaginemos que estamos trabajando en 12pt y definimos una unidad como 150%. Esto sería igual al 150% de los 12pt actuales, que equivale a 18pt. <br>
+    <img src="img/unidades-porcentaje.png" class="tamaño-ejemplos">
+
+</p>
+<h1>¿Qué es el modelo de cajas en CSS?</h1>
+<p class="text-justify">
+    El modelo de cajas o "box model" es seguramente la característica más importante del lenguaje de hojas de estilos CSS, ya que condiciona el diseño de todas las páginas web. El modelo de cajas es el comportamiento de CSS que hace que todos los elementos de las páginas se representen mediante cajas rectangulares.
+
+    Las cajas de una página se crean automáticamente. Cada vez que se inserta una etiqueta HTML, se crea una nueva caja rectangular que encierra los contenidos de ese elemento. Las partes que componen cada caja y su orden de visualización desde el punto de vista del usuario son las siguientes:<br>
+    <img src="img/modelo-de-cajas.png" class="tamaño-ejemplos">
+    <ul >
+        <li> Contenido(content): se trata del contenido HTML del elemento (palabras de un párrafo, una imagen, el texto de una lista de elementos, etc.</li>
+        <li> Relleno (padding): espacio libre opcional existente entre el contenido y el borde.</li>
+        <li> Borde (border): línea que encierra completamente el contenido y su relleno.</li>
+        <li> Imagen de Fondo (background image): imagen que se muestra por detrás del contenido y el espacio de relleno</li>
+        <li> Color de Fondo (background color): color que se muestra por detrás del contenido y el espacio de relleno.</li>
+        <li> Margen (margin): separación opcional existente entre la caja y el resto de cajas adyacentes.</li>
+    </ul>
+
+    <img src="img/modelocaja_ejemplo.png" class="tamaño-ejemplos">
+</p>
+
+<h2>Elementos de línea y elementos de bloque</h2>
+<img src="img/Elementos-de-bloque-y -en-línea-HTML.png" class="tamaño-ejemplos">
+
+    <h3>Elementos de Línea:</h3>
+   <p> Un elemento en línea HTML solo ocupa el ancho de su contenido. Mira algunos ejemplos con los que has practicado hasta ahora: <br>
+   </p>
+    <img src="img/elemento_linea.png" width="200px" height="200px"> <br>
+  <p> Puedes usar elementos de bloque dentro de otros elementos de bloque, pero evita utilizar elementos de bloque dentro de elementos en línea. Es posible que el navegador los muestre correctamente, pero, como no es una forma correcta de usarlos, puede terminar mostrando un error o, simplemente, tu contenido se verá desordenado. <br>
+  </p> 
+<h3>Elementos de bloque:</h3>
+<p> Un elemento de bloque HTML es aquel que ocupa todo el ancho de la página o del elemento que lo contiene. Ya has visto algunos de ellos, como por ejemplo: <br>
+<img src="img/elemento_bloque.png" class="tamaño-ejemplos"></p>
+     </div>
+
+
+    
+        </body>
+        <footer>
+            <p class="centrar_texto">
+                Creado por: Crisol Esmeralda Garcia Lemus
+                Carné:201846415
+            </p>
+        </footer>
+
+</html>

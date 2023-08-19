@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/efpem_ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/colores.css">
+    <title>Página Colores</title>
+</head>
+
+<body class="contenedor">
+    
+    
+    <section >
+        <aside >
+            <img src="img/Usac_logo.png" class="logo_usac" >  
+        
+          
+            <img src="img/EFPEM.png" class="logo_Efpem" > 
+            </aside>
+        <p class="centrar_texto" id="sombra_texto"> 
+            Universidad de San Carlos de Guatemala – USAC
+            <br>
+            Escuela de Formación de Profesores de Enseñanza Media – EFPEM
+            <br>
+            Diseño Web – 2023
+            </p>
+        
+           
+        </section>
+        <nav>
+            <ul class="menu">
+                <li class="menu_li"><a class="active" href="index.html">Inicio</a></li>
+                <li class="menu_li"><a href="estructura.html">Estructura Css</a></li>
+                <li class="menu_li"><a href="colores.html">Página Colores</a></li>
+                <li class="menu_li"><a href="bordes.html">Página Bordes</a></li>
+                <li class="menu_li"><a href="sombreada.html">Página Sombreada</a></li>
+                <li class="menu_li"><a href="fondos.html">Página Fondos y Opacidad</a></li>
+            </ul>
+        </nav>
+    </head>
+    <header>
+        <br>
+        Página Colores
+    </header>
+    <div>
+        <h1>Colores RGB</h1>
+     <p>   Los colores en HTML se especifican mediante el estándar RGB (Red Green and Blue). Este estándar indica que una
+        combinación de los tres colores básicos: rojo, verde y azul puede dar lugar a cualquier otro color.
+
+        Los valores que se les da al RGB son valores hexadecimales que van desde el 00 hasta el FF. Al valor del color
+        se le antepone una almohadilla.
+
+        De esta forma un color rojo sería aquel que solo tiene activado el Red, el verde solo la parte del Green y el
+        azul la parte del Blue. Así los colores básicos en HTML serán: <br></p>
+        <ul>
+            <li>Rojo #FF0000</li>
+            <li>Verde #00FF00</li>
+            <li>Azul #0000FF</li>
+
+        </ul>
+    <p>   Otras combinaciones generales de colores serían el negro (activando todos los colores), el blanco (desactivando
+        todos los colores), amarillo (combinando Red y Blue), fucsia (combinando todo el rojo y todo el azul) <br> </p> 
+        <ul>
+            <li>Negro #FFFFFF</li>
+            <li>Blanco #000000</li>
+            <li>Amarillo #FFFF00</li>
+            <li>Fucsia #FF00FF</li>
+
+        </ul>
+        <h3>Utilizar colores en HTML</h3>
+        <p > Los colores al ser elementos de estilo son utilizados en las CSS. Ya que HTML solo
+            define la estructura de la
+            página.
+
+            Pero vamos a ver, por encima, cómo podríamos cambiar el color de un texto. Para ello vamos a utilizar el
+            atributo style. El atributo style nos permite asignar un estilo CSS a un elemento HTML.
+
+            El estilo que vamos a manipular es color. A ese atributo color le asignaremos un valor RGB. <br> </p>
+        <img src="img/colores.png" width="600px" height="200px">
+
+
+        <h3>Colores hexadecimales</h3>
+        <p >
+            Un color hexadecimal se especifica con: #RRGGBB, donde los enteros hexadecimales RR (rojo), GG (verde) y BB
+            (azul) especifican los componentes del color. Todos los valores deben estar entre 00 y FF.
+            <br>
+            Por ejemplo, el valor #0000ff se representa como azul, porque el componente azul se establece en su valor
+            más alto (ff) y los demás se establecen en 00. <br>
+            <img src="img/colores2.png" width="500px" height="300px">
+        </p>
+
+        <h3>Colores HSL</h3>
+        <p >
+            HSL significa tono, saturación y luminosidad, y representa una representación de colores en coordenadas cilíndricas. Un valor de color HSL se especifica con la función hsl() , que tiene la siguiente sintaxis:  hsl(hue, saturation, lightness).
+
+            El tono es un grado en la rueda de colores (de 0 a 360): 0 (o 360) es rojo, 120 es verde, 240 es azul. La
+            saturación es un valor porcentual; 0% significa un tono de gris y 100% es el color completo. La ligereza
+            también es un porcentaje; 0% es negro, 100% es blanco. <br>
+            <img src="img/colores3.png" width="500px" height="200px">
+           
+        </p>
+
+        <p>
+        <h3>Formas de colocar color en CSS:</h3>
+        <ul>
+            <li> Nombres de colores CSS</li>
+        </ul>
+      <p> En CSS, se puede especificar un color usando un nombre de color predefinido: <br> </p> 
+        <div class="color1 box"> Morado</div>
+            <div class="color2 box"> Lila</div>
+            <div class="color3 box"> Verde </div>
+            <div class="color4 box"> Rojo</div>
+
+        <ul>
+            <li> Color de Texto CSS</li>
+        </ul>
+       
+        <div> 
+            <p class="texto_color">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, nemo dolor! Optio consequuntur, dicta consectetur quam doloremque amet illum perferendis iure animi facilis pariatur laudantium eos quaerat quis tenetur sint.</p>
+        </div>
+        
+         <h3>Color de borde CSS </h3>   
+        <p id="borde1"> PRUEBA BORDE 1</p>
+        <p id="borde2"> PRUEBA BORDE 2</p>
+        <p id="borde3"> PRUEBA BORDE 3</p>
+      
+        
+  <h3>  Fondos Degradados CSS </h3>
+        
+       <p> Los degradados CSS le permiten mostrar transiciones suaves entre dos o más colores específicos. 
+
+CSS define tres tipos de gradientes: <br></p>
+<ul>
+    <li>Gradientes lineales (baja/arriba/izquierda/derecha/diagonalmente): Para crear un degradado lineal, debe definir al menos dos paradas de color. Las paradas de color son los colores entre los que desea generar transiciones suaves. También puede establecer un punto de partida y una dirección (o un ángulo) junto con el efecto de degradado.
+        
+    <section id="grad1"> </section>
+        
+    </li>
+    <li>Gradientes radiales (definidos por su centro): Un gradiente radial se define por su centro.
+        Para crear un degradado radial, también debe definir al menos dos paradas de color.
+       
+        <section id="grad2"> </section>
+    <li>Gradientes cónicos (girados alrededor de un punto central): Un degradado cónico es un degradado con transiciones de color giradas alrededor de un punto central.
+        Para crear un degradado cónico, debe definir al menos dos colores. <br>
+  </li>
+  <section id="grad3"> </section>
+</ul>
+
+        </p>
+
+    </div>
+
+</body>
+<footer>
+    <p class="centrar_texto">
+        Creado por: Crisol Esmeralda Garcia Lemus
+        Carné:201846415
+    </p>
+</footer>
+
+</html>
